@@ -33,6 +33,9 @@ body {
   justify-content: space-around;
 }
 
+.header h3 {
+  align-items: center;
+}
 .content .input-control {
   display: flex;
   align-items: center;

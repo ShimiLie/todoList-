@@ -1,10 +1,43 @@
 const inputBox = document.querySelector(".text");
 const listContainer = document.querySelector(".list-container");
 const addBtn = document.querySelector(".add-btn");
+const time = document.querySelector("h3");
+const date = new Date();
 
-console.log(inputBox);
-console.log(listContainer);
-console.log(addBtn);
+const dayNames = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+const monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const day = dayNames[date.getDay()];
+const month = `${monthNames[date.getMonth()]} ${date.getDate()}`;
+const year = date.getFullYear();
+time.textContent = `${day} ${month} ${year}`;
+console.log(time);
+
+// console.log(inputBox);
+// console.log(listContainer);
+// console.log(addBtn);
 addBtn.addEventListener("click", () => {
   if (inputBox.value === "") {
     alert("You have to do something today!");

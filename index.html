@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <main class="main">
+        <div class="header">
+          <div class="img-wrapper">
+            <img src="./public/img/images.png" alt="icon" />
+          </div>
+          <div>
+            <h1>Todo List</h1>
+            <h3>Times</h3>
+          </div>
+          <div class="img-wrapper">
+            <img
+              src="./public/img/to-do-list-hand-drawn-doodle-icon-free-vector.jpg"
+              alt="icon"
+            />
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="input-control">
+            <input
+              type="text"
+              class="text"
+              placeholder="What's the plan for today?"
+            />
+            <button class="add-btn">Add</button>
+          </div>
+
+          <div class="list-box">
+            <ul>
+              <li class="checked">Javascript</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
